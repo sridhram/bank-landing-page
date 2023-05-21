@@ -21,14 +21,12 @@ const GetStarted = ({ className = '' }) => {
 
 const Hero = () => {
   return (
-    <article className="h-screen m-8 md:h-auto flex flex-col gap-4 items-center justify-center">
+    <article className="h-screen p-8 md:h-auto flex flex-col gap-4 items-center justify-center max-w-[1300px] mx-auto">
       <article
         id="home"
-        className={`${styles.flexCenter} md:flex-col md:gap-8 flex-1 max-w-[1200px]`}
+        className={`${styles.flexCenter} md:flex-col md:gap-8 flex-1`}
       >
-        <section
-          className={`${styles.flexStart} text-white flex-col ml-8 gap-8`}
-        >
+        <section className={`${styles.flexStart} text-white flex-col gap-8`}>
           <div className="flex items-center gap-2 bg-discount-gradient p-4 rounded-lg text-dimWhite sm:text-xs">
             <img className="inline-block" src={discount} alt="discount icon" />
             <p>
@@ -50,7 +48,7 @@ const Hero = () => {
               payment method
             </h1>
           </div>
-          <p>
+          <p className="text-dimWhite">
             Our team of experts uses a methodology to identify the credit cards
             most likely to fit your needs. We examine annual percentage rates,
             annual fees.

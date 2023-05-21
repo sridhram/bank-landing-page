@@ -3,7 +3,7 @@ import { stats } from '../constants';
 
 const Stats = () => {
   return (
-    <section className="flex gap-8 flex-wrap justify-evenly my-4 md:mt-8">
+    <section className="flex gap-24 lg:gap-8 md:gap-8 flex-wrap justify-evenly my-4 md:mt-8">
       {stats.map((stat, index) => {
         return (
           <>
