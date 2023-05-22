@@ -7,7 +7,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <>
-      <header className="flex justify-between px-12 items-center py-4 md:items-start">
+      <header className="flex justify-between px-12 items-center py-4 md:items-center">
         <figure>
           <img src={logo} alt="logo" className="max-w-[100px]" />
         </figure>
@@ -21,7 +21,11 @@ const Navbar = () => {
           >
             {navLinks.map((navLink) => {
               return (
-                <li className="capitalize text-dimWhite" title={navLink.title}>
+                <li
+                  className="capitalize text-dimWhite"
+                  title={navLink.title}
+                  onClick={() => setToggleMenu(false)}
+                >
                   <a href={`#${navLink.id}`}>{navLink.id}</a>
                 </li>
               );
