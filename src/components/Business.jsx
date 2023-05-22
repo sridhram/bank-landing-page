@@ -28,7 +28,7 @@ const Business = () => {
               key={`${feature.id}`}
               className="flex items-center gap-4 feature-card p-6 lg:p-4 md:p-8 sm:p-4 cursor-pointer rounded-lg"
             >
-              <figure className="min-w-[40px]">
+              <figure className="min-w-[60px] min-h-[60px] p-2 rounded-full bg-dimBlue flex justify-center">
                 <img src={feature.icon} alt="feature-icon" />
               </figure>
               <div>

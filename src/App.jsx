@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Business from './components/Business';
+import CardDeal from './components/CardDeal';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <Business />
+      <CardDeal />
     </main>
   );
 }
