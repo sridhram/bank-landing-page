@@ -28,7 +28,9 @@ const Footer = () => {
               {individualSection.links.map((link) => {
                 return (
                   <li className="text-dimWhite mb-2 text-sm">
-                    <a href={link.link}>{link.name}</a>
+                    <a target="_blank" href={link.link}>
+                      {link.name}
+                    </a>
                   </li>
                 );
               })}
@@ -44,7 +46,7 @@ const Footer = () => {
         <figure className="flex gap-4 items-center pl-6">
           {socialMedia.map((icon) => {
             return (
-              <a href={icon.link}>
+              <a href={icon.link} target="_blank">
                 <img src={icon.icon} id={icon.id} alt="social media" />
               </a>
             );
