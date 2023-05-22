@@ -5,7 +5,7 @@ const Clients = ({ title, name, id, img, content }) => {
   return (
     <section
       id={id}
-      className="cursor-pointer feature-card rounded-lg p-8 lg:p-4 flex flex-col gap-8"
+      className="cursor-pointer feature-card rounded-lg p-8 lg:p-4 flex flex-col gap-8 md:w-full"
     >
       <figure>
         <img src={quotes} alt="quotes" className="" />
