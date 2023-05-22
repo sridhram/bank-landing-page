@@ -4,6 +4,7 @@ import Business from './components/Business';
 import CardDeal from './components/CardDeal';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
+import Testimonials from './components/Testimonials';
 function App() {
   return (
     <main className="bg-primary w-full overflow-hidden">
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Business />
       <CardDeal />
+      <Testimonials />
     </main>
   );
 }
